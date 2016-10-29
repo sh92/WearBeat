@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sh.databasetest3"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="22" />
+
+    <!-- Min/target SDK versions (<uses-sdk>) managed by build.gradle -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.REACIVE_BOOT_COMPLETED" >
+    </uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/wearbeat_watch"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <receiver
+            android:name="com.example.sh.WearBeat.StartReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:label="MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLTED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.example.sh.WearBeat.MainActivity"
+            android:label="웨어비트" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.sh.WearBeat.MyPersonActivity"
+            android:label="웨어비트"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.sh.WearBeat.MyFamilyActivity"
+            android:label="웨어비트"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.sh.WearBeat.MyFriendActivity"
+            android:label="웨어비트"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.sh.WearBeat.MyJobActivity"
+            android:label="웨어비트"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name="com.example.sh.WearBeat.NLService"
+            android:label="웨어비트"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

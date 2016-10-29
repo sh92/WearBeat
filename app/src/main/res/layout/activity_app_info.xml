@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".AppInfoActivity"
+    android:orientation="vertical"
+	android:weightSum="1">
+
+	<ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+    </ListView>
+    
+	<LinearLayout android:id="@+id/loading_container"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:visibility="gone"
+			android:gravity="center">
+	
+		<ProgressBar style="?android:attr/progressBarStyleLarge"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+		<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="@string/loading"
+				android:paddingTop="4dip"
+				android:singleLine="true" />
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="171dp"
+		android:layout_height="28dp"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:text="어플별 진동패턴 바꾸기▲"
+		android:id="@+id/textView6"
+		android:layout_gravity="right"
+		android:layout_marginTop="2dp"
+		android:textSize="15dp"
+		android:textColor="#0000ff" />
+
+	<Button
+		style="?android:attr/buttonStyleSmall"
+		android:layout_width="148dp"
+		android:layout_height="35dp"
+		android:text="사람별 패턴 추가"
+		android:id="@+id/btn_intent"
+		android:layout_marginTop="-30dp"
+		android:onClick=""
+		tools:context=".MyPerson"/>
+
+	<TextView
+		android:layout_width="348dp"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:text="\n사람별, 그룹별로 또는 어플별로 진동패턴을 다르게 할 수 있습니다."
+		android:id="@+id/textView3"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="0dp"
+		android:layout_marginLeft="10dp" />
+
+	<TextView
+android:layout_width="346dp"
+android:layout_height="wrap_content"
+android:textAppearance="?android:attr/textAppearanceMedium"
+android:text="\n※ (필수!) 설정 > 일반 >보안 > 알림 액세스 \n \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(이 앱 액세스 허용)"
+android:id="@+id/textView4"
+android:layout_marginTop="5dp"
+android:layout_marginLeft="10dp"
+android:textSize="19dp"
+		android:textColor="#ff0000" />
+
+	<TextView
+		android:layout_width="359dp"
+		android:layout_height="wrap_content"
+		android:text="○우선순위 : \n 사람별 >  어플별 설정 > 기본 값 "
+		android:id="@+id/textView12"
+		android:layout_gravity="center_horizontal"
+		android:textColor="#0000ff"
+		android:layout_marginLeft="10dp"
+		android:textSize="18dp" />
+	<!--○우선순위 : \n 사람별 > 감정별(즐겨찾기) > 어플별 설정 > 기본 값-->
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:text="● 어플별 기본진동 \n 1) 카톡 -> 카! 톡!  (진동두번) \n 2) 페이스북 ,메신저-> 진동4번\n"
+		android:id="@+id/textView9"
+		android:layout_marginLeft="10dp"
+		android:textSize="18dp"
+		android:layout_marginTop="10dp" />
+
+	<!--<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="27dp"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:text="  ●감정별 진동값 (카톡, 페이스북 메신저 가능)  \n"
+		android:id="@+id/textView14" />
+-->
+	<!--<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:text="※연락처에서 즐겨찾기(★)를 이용시에는 감정에 따라 진동이 변화합니다.  (일부 카톡 이모티콘 가능) \n   "
+		android:id="@+id/textView5"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="10dp"
+		android:textSize="14dp"
+		android:textColor="#0000ff" />
+-->
+	<!--<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:text="(단, 주소록 이름과 카톡 닉네임과 일치해야함)"
+		android:id="@+id/textView8"
+		android:layout_marginLeft="10dp"
+		android:textColor="#ff0000"
+		android:layout_marginBottom="10dp" />-->
+
+	<!--<TextView
+		android:layout_width="371dp"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:text="○ [진동패턴 ==> 진동시킬 키워드] \n  1) ㅋㄷㅋㄷ ==> ㅋㅋ, ㅎㅎ, ^^, :) , (하하) , (좋아), \n (씩씩) , (신나) \n   2) 눈물떨어지는소리 ==> ㅜㅜ , ㅠㅠ , ㅜㅠ , ㅜㅠ , \n (흑흑) , (눈물)  \n   3) 대한민국 ==> 파이팅 , 힘내 , 화이팅, ㅎㅇㅌ"
+		android:id="@+id/textView7"
+		android:textSize="15dp"
+		android:layout_marginLeft="10dp"
+		android:layout_weight="0.50"
+		android:phoneNumber="true" />-->
+	<!--android:text="●감정별 진동값 (카톡, 페이스북 메신저 가능)  \n  [진동패턴 ==> 진동시킬 키워드] \n  1) ㅋㄷㅋㄷ ==> ㅋㅋ, ㅎㅎ, ^^, :) , (하하) , (좋아), \n (씩씩) , (신나) \n  2) 눈물떨어지는소리 ==> ㅜㅜ , ㅠㅠ , ㅜㅠ , ㅜㅠ , \n (흑흑) , (눈물) \n 3) 땡~큐 (길게 짧게) ==> ㄱㅅ, 고마워 ,감사 \n 4) ㅇㅋ~ (짦게 길게) ==> ㅇㅇ , ㅇㅋ \n 5) I Love you~ ==> 사랑해 , 알러뷰, (사랑뿅), (하트), \n (뽀뽀)  \n 6) 빵빠레 ==> ㅊㅋ,  축하, 굿, (굿) \n 7) 노~노~(길게 2번) ==> ㄴㄴ ,ㅡㅡ, (심각), (정색) \n 8) 컬~(길게 한번) ==> 컬, 헐 (헉) \n 9) 대한민국 ==> 파이팅 , 힘내 , 화이팅, ㅎㅇㅌ"-->
+
+
+</LinearLayout>

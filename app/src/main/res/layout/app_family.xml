@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:weightSum="1">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가족"
+            android:id="@+id/family_btn"
+            android:layout_weight="0.60" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="친구"
+            android:id="@+id/friend_btn"
+            android:layout_weight="0.14" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="직장"
+            android:id="@+id/job_btn"
+            android:layout_weight="0.10" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="진동패턴설정"
+            android:id="@+id/etc_btn"
+            android:layout_weight="0.16"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="가족한테 사랑한다고 말해보세요 ! \n (진동패턴 :  I Love you)"
+        android:id="@+id/textView10"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="#ff0000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="카톡 닉네임 추가 \n (단, 동명이인 구별불가) "
+        android:id="@+id/textView11"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="0dp"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/EditName"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="241dp"
+            android:layout_height="0dp"
+            android:text="추가 "
+            android:id="@+id/addBtn"
+            android:layout_weight="5"
+            android:layout_gravity="center_horizontal"
+            android:onClick="addPerson"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:text="삭제"
+        android:id="@+id/removeBtn"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:onClick="removePerson" />
+
+    <ScrollView
+        android:layout_width="343dp"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="진동이 추가된 사람 리스트입니다."
+            android:id="@+id/addedPersonandVib"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp" />
+    </ScrollView>
+</LinearLayout>
