@@ -7,8 +7,7 @@ This is a android program to recognize message or person who send the message wi
   * Android-5.0 Lolipop 
   * NotificationListenerService over version 4.3 (API 18)
 
-* You can customize for you
-  * the vibration pattern
+* You can customize the vibration pattern for you
     * the person name who send the text message
     * content by using text pettern
 
