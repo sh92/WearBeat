@@ -10,7 +10,7 @@ This is a android program to recognize message or person who send the message wi
 * You can customize for you
   * the vibration pattern
     * the person name who send the text message
-	* content by using text pettern
+    * content by using text pettern
 
 ### Paper
 [A Message Recognition Method by Vibration on a Wearable Device (Dec, 2015) ](http://www.dbpia.co.kr/Journal/ArticleDetail/NODE06602794)
