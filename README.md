@@ -13,7 +13,7 @@ This is a android program to recognize message or person who send the message wi
     * content by using text pettern
 
 ### Paper
-[A Message Recognition Method by Vibration on a Wearable Device (Dec, 2015) ](http://www.dbpia.co.kr/Journal/ArticleDetail/NODE06602794)
-Lee Sang-hee0, Mun Hyun-su, Lee Young-seok
-Computer Science & Engineering, Chungnam Natinal University
-tkd1496@naver.com, {munhyunsu, lee}@cnu.ac.kr
+[A Message Recognition Method by Vibration on a Wearable Device (Dec, 2015) ](http://www.dbpia.co.kr/Journal/ArticleDetail/NODE06602794)  
+Lee Sang-hee0, Mun Hyun-su, Lee Young-seok  
+Computer Science & Engineering, Chungnam Natinal University  
+tkd1496@naver.com, {munhyunsu, lee}@cnu.ac.kr  
